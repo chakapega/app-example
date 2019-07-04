@@ -1,0 +1,21 @@
+.posts {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.posts__filter {
+  margin-bottom: 10px;
+  font-size: 15px;
+  width: 300px;
+  margin-bottom: 40px;
+
+  align-self: center;
+}
+
+.posts__filter-label {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
