@@ -1,0 +1,9 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 800px;
+  border: 2px solid purple;
+  margin: 3px;
+  margin-left: 70px;
+}

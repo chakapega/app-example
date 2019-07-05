@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from './Home';
 import PostsPage from './PostsPage';
 import './App.css';
+import CommentsPage from './CommentsPage';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header />
         <Route path="/" exact component={Home} />
         <Route path="/posts/" component={PostsPage} />
+        <Route path="/comments" component={CommentsPage} />
       </Router>
     );
   }

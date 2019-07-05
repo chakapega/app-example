@@ -15,4 +15,4 @@ export default function Post({ post, onDeletePost }) {
       </button>
     </div>
   );
-}
+};

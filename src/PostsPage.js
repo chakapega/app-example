@@ -59,5 +59,5 @@ export default class PostsPage extends Component {
         <Loader />
       </div>
     );
-  }
-}
+  };
+};
