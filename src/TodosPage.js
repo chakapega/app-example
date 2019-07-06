@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
+import LoaderOne from './LoaderOne';
 
 export default class TodosPage extends Component {
   state = {
@@ -21,7 +22,7 @@ export default class TodosPage extends Component {
 
     return (
       <div className='todos page'>
-        <Todos todos={todos}/>
+        {todos.length ? (<Todos todos={todos}/>) : (<LoaderOne/>)}
       </div>
     );
   };
