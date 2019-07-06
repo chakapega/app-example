@@ -13,15 +13,11 @@ export default class PostsPage extends Component {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(json => {
-        console.log('Response: ', json);
         this.setState({ posts: json });
       });
   }
 
   onDeletePost = postId => {
-    console.log('Delete post clicked!');
-    console.log('Delete post id: ', postId);
-
     const { posts } = this.state;
 
     const newPosts = posts.filter(post => post.id !== postId);

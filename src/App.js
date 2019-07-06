@@ -6,6 +6,7 @@ import Home from './Home';
 import PostsPage from './PostsPage';
 import './App.css';
 import CommentsPage from './CommentsPage';
+import TodosPage from './TodosPage';
 
 class App extends Component {
   render() {
@@ -15,9 +16,10 @@ class App extends Component {
         <Route path="/" exact component={Home} />
         <Route path="/posts/" component={PostsPage} />
         <Route path="/comments" component={CommentsPage} />
+        <Route path="/todos" component={TodosPage} />
       </Router>
     );
-  }
-}
+  };
+};
 
 export default App;
