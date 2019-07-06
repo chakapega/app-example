@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import User from './User';
 
-export default function Users() {
+export default function Users({ users }) {
   return (
-    <h1>
-      Users
-    </h1>
+    <div className='users'>
+      {users.map(user => (
+        <User user={user}/>
+      ))}
+    </div>
   )
 }

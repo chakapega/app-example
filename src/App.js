@@ -7,6 +7,7 @@ import PostsPage from './PostsPage';
 import './App.css';
 import CommentsPage from './CommentsPage';
 import TodosPage from './TodosPage';
+import UsersPage from './UsersPage';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Route path="/posts/" component={PostsPage} />
         <Route path="/comments" component={CommentsPage} />
         <Route path="/todos" component={TodosPage} />
+        <Route path="/users" component={UsersPage} />
       </Router>
     );
   };
