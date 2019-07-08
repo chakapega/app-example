@@ -1,0 +1,22 @@
+.user {
+  border: 1px solid wheat;
+  margin-left: 70px;
+  margin-bottom: 3px;
+  margin-right: 70px;
+}
+
+.user__name {
+  background-color: antiquewhite;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.user__nickname {
+  margin-left: 5px;
+}
