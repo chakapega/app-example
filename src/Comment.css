@@ -6,4 +6,27 @@
   border: 2px solid purple;
   margin: 3px;
   margin-left: 70px;
+  height: 190px;
+}
+
+.comment__like_img {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.comment__like_img:active {
+  height: 38px;
+  width: 38px;
+  margin-left: 52px;
+  margin-bottom: 7px;
+}
+
+.comment__number_likes {
+  position: relative;
+  left: 100px;
+  bottom: 26px;
+  height: 20px;
+  width: 20px;
 }

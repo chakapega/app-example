@@ -11,11 +11,32 @@ export default class CommentsPage extends Component {
     fetch('https://jsonplaceholder.typicode.com/comments')
       .then(response => response.json())
       .then(json => {
+        json.map(comment => {
+          comment.numberLikes = 0;
+        });
+
         console.log(json);
+
         this.setState({
           comments: json
         });
       });
+  };
+
+  addLikeComment = e => {
+    console.log(e);
+    const { comments } = this.state;
+    const newComments = JSON.parse(JSON.stringify(comments));
+
+    newComments.map(comment => {
+      if(comment.id === +e.target.id) {
+        ++comment.numberLikes;
+      };
+    });
+
+    this.setState({
+      comments: newComments
+    });
   };
 
   render() {
@@ -24,7 +45,7 @@ export default class CommentsPage extends Component {
     return (
       <div className='comments page'>
         {comments.length ? (
-          <Comments comments={comments}/>
+          <Comments comments={comments} addLikeComment={this.addLikeComment}/>
         ) : (
           <Loader/>
         )}
