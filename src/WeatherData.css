@@ -1,0 +1,4 @@
+.weather__data {
+  display: flex;
+  flex-direction: column;
+}

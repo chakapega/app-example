@@ -32,8 +32,13 @@ export default function Header() {
               Users
             </Link>
           </li>
+          <li className="navigation__item">
+            <Link className="navigation__link" to="/weather">
+              Weather
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
